@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class chatbot {
+public class Main {
 
 
     public static void main(String[] args) {
@@ -80,8 +80,10 @@ public class chatbot {
                 System.out.println("Verkeerd geschreven");
             }
 
-        }else if (userMood.equals("valt wel mee") || userMood.equals("Valt wel mee")) {
-            System.out.println("Eerder slecht of eerder goed?");
+
+
+        }else if (userMood.equals("valt wel mee") || userMood.equals("valt wel mee")) {
+            System.out.println("eerder slecht of eerder goed?");
 
 
         }else {
@@ -89,10 +91,19 @@ public class chatbot {
         }
 
 
+        String causeOfValtWelMee = scanner.nextLine();
 
+        if (causeOfValtWelMee.equals("eerder goed")) {
+            System.out.println("probeer wat te doen waardoor je dag een beetje beter wordt zoals je hobby's uitoefenen etc.");
 
+        }else if(causeOfValtWelMee.equals("eerder slecht")) {
+            System.out.println("denk nu eens goed na of je dag echt slecht gaat en hoe je dat zou kunnen fiksen" +
+                    " ga terug naar het begin en kies slecht " + " als je dit niet weet");
+
+        }else {
+            System.out.println("Verkeerd geschreven");
+        }
 
 
     }
 }
-
